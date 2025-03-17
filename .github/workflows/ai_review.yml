@@ -37,4 +37,9 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           AI_API_KEY: ${{ secrets.AI_API_KEY }}
-        run: pipenv run python -m src.main --repo ${{ github.repository }} --pr ${{ github.event.pull_request.number }}
+        run: |
+          # 保存當前目錄
+          BASE_DIR=$(pwd)
+          cd ai-pr-reviewer
+          # 將目標儲存庫路徑傳給 repomix
+          pipenv run python -m src.main --repo ${{ github.repository }} --pr ${{ github.event.pull_request.number }} --include "$BASE_DIR/**/*"
