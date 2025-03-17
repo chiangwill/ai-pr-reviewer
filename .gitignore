@@ -1,0 +1,68 @@
+# Python 相關檔案
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Pipenv 相關檔案
+Pipfile.lock
+
+# 虛擬環境
+venv/
+ENV/
+env/
+.venv/
+
+# 環境變數和敏感資訊
+.env
+.env.local
+.env.*.local
+*.env
+.secrets
+secrets.yaml
+secrets.yml
+
+# IDE 和編輯器相關檔案
+.idea/
+.vscode/
+*.swp
+*.swo
+.vs/
+*.sublime-project
+*.sublime-workspace
+.DS_Store
+
+# 專案特定檔案
+.ai-review.yml
+review-result.json
+repomix-output.txt
+repomix-output.xml
+review-output/
+
+# 暫存檔案
+tmp/
+temp/
+*.tmp
+*.temp
+.cache/
+
+# 日誌檔案
+*.log
+logs/
